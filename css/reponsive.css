@@ -1,0 +1,126 @@
+.sp,
+.toggle_bar,
+.toggle_close{
+	display: none;
+}
+@media only screen and (max-width: 1235px) and (min-width: 1130px){
+	.contact_form{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1129px) and (min-width: 901px){
+	.info_about,
+	.about_experent{
+		flex-direction: column;
+	}
+	.info_about_first,
+	.info_about_two,
+	.about_experent .education, 
+	.about_experent .experience,
+	.contact_form{
+		width: 100%;
+	}
+	.portfolio_box,
+	.blog_box{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.img_portfolio img{
+		height: 220px;
+	}
+	.icon_contact p{
+		font-size: 13px;	
+	}
+}
+@media only screen and (max-width: 900px) and (min-width: 751px){
+	.info_about_first,
+	.info_about,
+	.about_experent{
+		width: 100%;
+		flex-direction: column;
+	}
+	.row_1,
+	.info_about_two,
+	.about_experent .education, 
+	.about_experent .experience{
+		width: 100%;
+		margin-right: 0;
+	}
+	.button_btn{
+		margin-top: 20px;
+	}
+	.portfolio_box,
+	.blog_box,
+	.contact_box{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.contact_form{
+		width: 100%
+	}
+	.section_absolute{
+		padding: 60px 3rem;
+	}
+	.icon_contact p{
+		font-family: 'Rubik Mono One', sans-serif;
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 750px){
+	.aside{
+		width: 0;
+	}
+	.pc{
+		display: none;
+	}
+	.sp{
+		display: block;
+	}
+	.button_btn a{
+		margin-top: 20px;
+	}
+	.toggle_bar{
+		display: block;
+		left: 30px;
+		z-index: 22;
+	}
+	.toggle_bar.menuright{
+		left: 300px;
+	}
+	.main .main-right{
+		padding-left: 0;
+	}
+	.info_about_first,
+	.info_about,
+	.about_experent{
+		width: 100%;
+		flex-direction: column;
+	}
+	.row_1,
+	.info_about_two,
+	.about_experent .education, 
+	.about_experent .experience{
+		width: 100%;
+		margin-right: 0;
+	}
+	.section_absolute{
+		padding: 60px 2rem;
+	}
+	.info_about_first li{
+		margin-right: 0;
+	}
+	.experience{
+		margin-top: 2rem;
+	}
+	.portfolio_box{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.img_portfolio img{
+		height: 270px;
+	}
+	.blog_box,
+	.contact_box {
+	    grid-template-columns: repeat(1, 1fr);
+	}
+	.contact_form{
+		width: 100%;
+	}
+}
