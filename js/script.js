@@ -34,60 +34,60 @@ const filterContainer = document.querySelector(".tab_portfolio");
       
 // Light Box 
 
-    const lightbox = document.querySelector('.lightbox'),
-          lightboxImage = document.querySelector('.lightbox_img'),
-          lightboxClose = document.querySelector('.lightbox_close'),
-          lightboxText = document.querySelector('.text-lightbox'), 
-          lightboxCount = document.querySelector('.count_lightbox');
+//     const lightbox = document.querySelector('.lightbox'),
+//           lightboxImage = document.querySelector('.lightbox_img'),
+//           lightboxClose = document.querySelector('.lightbox_close'),
+//           lightboxText = document.querySelector('.text-lightbox'), 
+//           lightboxCount = document.querySelector('.count_lightbox');
 
-          let indexItems = 0;
+//           let indexItems = 0;
 
-          for (let i = 0; i < totaoPortlioItems; i++) {
-            portfolioItem[i].addEventListener('click', function(){
-                indexItems = i;
-                changeItems();
-                toggleLightBox();
-            });
-          }
+//           for (let i = 0; i < totaoPortlioItems; i++) {
+//             portfolioItem[i].addEventListener('click', function(){
+//                 indexItems = i;
+//                 changeItems();
+//                 toggleLightBox();
+//             });
+//           }
 
-          function nextItem(){
-              if (indexItems === totaoPortlioItems-1) {
-                  indexItems = 0;
-              }
-              else{
-                  indexItems++;
-              }
-              changeItems();
-          }
+//           function nextItem(){
+//               if (indexItems === totaoPortlioItems-1) {
+//                   indexItems = 0;
+//               }
+//               else{
+//                   indexItems++;
+//               }
+//               changeItems();
+//           }
 
-          function preItem(){
-            if (indexItems === 0) {
-                indexItems == totaoPortlioItems-1;
-            }
-            else{
-                indexItems--;
-            }
-            changeItems();
-          }
+//           function preItem(){
+//             if (indexItems === 0) {
+//                 indexItems == totaoPortlioItems-1;
+//             }
+//             else{
+//                 indexItems--;
+//             }
+//             changeItems();
+//           }
 
-          function toggleLightBox(){
-            lightbox.classList.toggle('open');
-          }
+//           function toggleLightBox(){
+//             lightbox.classList.toggle('open');
+//           }
 
 
-          function changeItems(){
-                imgSrc = portfolioItem[indexItems].querySelector('.img_portfolio img').getAttribute('src');
-                lightboxImage.src = imgSrc;
-                lightboxText.innerHTML = portfolioItem[indexItems].querySelector('h3').innerHTML;
-                lightboxCount.innerHTML = (indexItems + 1) + " of " + totaoPortlioItems;
-          }
+//           function changeItems(){
+//                 imgSrc = portfolioItem[indexItems].querySelector('.img_portfolio img').getAttribute('src');
+//                 lightboxImage.src = imgSrc;
+//                 lightboxText.innerHTML = portfolioItem[indexItems].querySelector('h3').innerHTML;
+//                 lightboxCount.innerHTML = (indexItems + 1) + " of " + totaoPortlioItems;
+//           }
   
-// Close LightBox
-lightbox.addEventListener('click', function(event){
-    if (event.target === lightboxClose || event.target === lightbox) {
-        toggleLightBox();       
-    }
-}); 
+// // Close LightBox
+// lightbox.addEventListener('click', function(event){
+//     if (event.target === lightboxClose || event.target === lightbox) {
+//         toggleLightBox();       
+//     }
+// }); 
 
 // Aside Nabar
   const nav = document.querySelector('.menu_list'),
