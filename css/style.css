@@ -729,7 +729,6 @@ body{
 .blog_content p{
     margin: 1rem 0;
     font-size: 14px;
-    font-family: monospace;
 }
 .blog_box small{
     color: #ec1839;
