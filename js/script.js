@@ -125,3 +125,25 @@ function closeNav() {
   document.getElementById("toggle_bar").style.display = "block";
   document.getElementById("toggle_close").style.display = "none";
 }
+
+
+
+//Jquery
+jQuery(document).ready(function($){
+  // Sroll smooth
+  $(".menu_list li a").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1300, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+})
